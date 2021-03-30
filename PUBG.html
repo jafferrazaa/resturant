@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Player Unknown Battleground</title>
+		<!--Bootstrap Css Link -->
+        <link rel="stylesheet" href="BootStrap/css/bootstrap.css" />
+        <!--Jquery Link -->
+        <script src="BootStrap/js/jquery.js" ></script>
+        <!--Bootstrap Jquery -->
+        <script src="BootStrap/js/bootstrap.js"></script>
+        <!--smooth scrolling script-->
+        <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+        <style type="text/css">
+		input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: transparent;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+#contactus {
+  border-radius: 5px;
+  color:black;
+  background-color: transparent;
+  padding: 20px;
+  opacity:100%;
+}
+#contactusbg{
+	background-image:url(Images/pubg_mobile.jpg);
+	opacity:100%;
+}
+</style>
+    </head>
+
+    <body style="font-family:Verdana, Geneva, sans-serif; background-color:#333; color:white">
+    <!--Navigation-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+          	<div class="navbar-header">
+            	<a href="#" class="navbar-brand">PLAYER UNKNOWN BATTLEGROUND (PUBG)</a>
+            </div>
+            <div>
+            	
+                <ul class="nav navbar-nav navbar-right">
+                	<li class="active"><a href="#navigation" target="_self">Home</a></li>
+                	
+                	<li><a href="#trailers" target="_self">Trailers</a></li>
+                    
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Versions <span class="caret"></span></a>
+                    	<ul class="dropdown-menu">
+                        	<li><a href="#pubg" target="_self">PUBG</a></li>
+                            <li><a href="#pubglite" target="_self">PUBG LITE</a></li>
+                            <li><a href="#pubgmobile" target="_self">PUBG MOBILE</a></li>
+                            <li><a href="#pubgmobilelite" target="_self">PUBG MOBILE LITE</a></li>
+                        </ul>
+                    </li>
+                	<li><a href="#contactusbg" target="_self">Contact Us</a></li>                                                            
+                </ul>
+            </div>
+          </div>
+        </div>
+        <!--Navigation End-->
+        <!--Home-->
+        		<div class="container-fluid" id="navigation">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+            
+                  <div class="item active">
+                    <img src="Images/pubg.jpg" alt="PUBG" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h3>PUBG</h3>
+                      <p>Player Unknown Battleground</p>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <img src="Images/pubglite.jpg" alt="PUBG LITE" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h3>PUBG LITE</h3>
+                      <p>Player Unknown Battleground Lite</p>
+                    </div>
+                  </div>
+                  
+                 <div class="item">
+                    <img src="Images/pubg_mobile.jpg" alt="PUBG MOBILE" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h3>PUBG MOBILE</h3>
+                      <p>Player Unknown Battleground Mobile</p>
+                    </div>
+                  </div>
+                  
+                  <div class="item">
+                    <img src="Images/pubgmlite.jpg" alt="PUBG MOBILE LITE" style="width:100%;">
+                    <div class="carousel-caption">
+                      <h3>PUBG MOBILE LITE</h3>
+                      <p>Player Unknown Battleground Mobile Lite</p>
+                    </div>
+                  </div>
+              
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        
+        <!--trailers-->
+        <div id="trailers" style="background-color:#333; padding-bottom:2%;">
+     <div>
+        <h1 align="center" style="color:white; padding-top:1%; padding-bottom:1%; background-color:#282828;"><b>TRAILERS</b></h1>
+        <br>
+        </div>
+        <div class="row item">
+        <div class="col-lg-6 item" style="background-color:#333;"><video poster="Images/pubg.jpg" style="padding-left:5%;" muted loop controls width="95%">
+        <source src="video/pubg.mp4"></video></div>
+        
+        <div class="column col-lg-6" style="background-color:#333;"><video poster="Images/pubglite.jpg" style="padding-left:5%;" controls muted loop width="95%">
+        <source src="video/pubg.mp4"></video></div>
+        </div>
+        <br>
+        <div class="row item">
+        <div class="col-lg-6 item" style="background-color:#333;"><video poster="Images/pubg_mobile.jpg" style="padding-left:5%;" muted loop controls width="95%">
+        <source src="video/pubg.mp4"></video></div>
+        
+        <div class="column col-lg-6" style="background-color:#333;"><video poster="Images/pubgmlite.jpg" style="padding-left:5%;" controls muted loop width="95%">
+        <source src="video/pubg.mp4"></video></div>
+        <br>
+        </div>
+        </div>
+        
+        <!--end trailers-->
+        
+        
+        
+        <!--pubg-->
+        <hr width="100%">
+     
+     
+     <h1 align="center"><b>PUBG</b><br>
+     <b>(Player Unknown Battleground)</b></h1>
+     <div id="pubg">  			
+                <div class="item">
+                <img src="Images/pubg.jpg" style="width:90%; padding-left:10%;">
+                </div>
+                <br>
+                <br>
+                <!--side table-->
+          <table class="infobox hproduct" style="width:22em;float: right; width: 22em; font-size: 90%; text-align: left; border-spacing: 3px; border:thin;">
+          <tbody>
+                <tr>
+                <th colspan="2" class="fn" style="text-align:center;font-size:125%;font-weight:bold;font-size:110%;font-style:italic;">PlayerUnknown's Battlegrounds</th></tr>
+                <tr><td colspan="2" style="text-align:center"><img src="Images/pubg.jpg" width="220" height="103"><br></td></tr>
+                <tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Developer(s)</th><td style="line-height:1.3em;">PUBG Corporation</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Publisher(s)</th>
+                <td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame1">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">PUBG Corporation</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+PUBG Corporation (PC, PS4)</li><li style="line-height: inherit; margin: 0">Microsoft Studios(Xbox One)</li><li style="line-height: inherit; margin: 0">Tencent Games(mobile)</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Director</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Brendan Greene</li><li>Tae-seok Jang</li></ul></div></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Producer(s)</th><td style="line-height:1.3em;">Chang-han Kim</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Designer(s)</th><td style="line-height:1.3em;">Brendan Greene</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Artist(s)</th><td style="line-height:1.3em;">Tae-seok Jang</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Composer(s)</th><td style="line-height:1.3em;">Tom Salta</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Engine</th><td style="line-height:1.3em;">Unreal Engine 4</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Platform(s)</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Microsoft Windows</li><li>Android</li><li>iOS</li><li>Xbox One</li><li>PlayStation 4</li></ul></div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Release</th><td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame2">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">December 20, 2017</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+<b>Microsoft Windows</b></li><li style="line-height: inherit; margin: 0">December 20, 2017</li><li style="line-height: inherit; margin: 0">
+<b>Android</b>, <b>iOS</b></li><li style="line-height: inherit; margin: 0">March 19, 2018</li><li style="line-height: inherit; margin: 0">
+<b>Xbox One</b></li><li style="line-height: inherit; margin: 0">September 4, 2018</li><li style="line-height: inherit; margin: 0">
+<b>PlayStation 4</b></li><li style="line-height: inherit; margin: 0">December 7, 2018</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Genre(s)</th><td style="line-height:1.3em;">Battle royale</a></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Mode(s)</th><td style="line-height:1.3em;">Multiplayer</td></tr></tbody></table>
+                
+              
+              <H1 align="center">ABOUT</H1>
+            <P align="center" style="overflow:auto;">PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.
+            </P>
+            <h1 align="center">Gameplay</h1>
+            <p align="center" style="font-size:12px; overflow:auto;">Battlegrounds is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match solo, duo, or with a small team of up to four people. The last person or team alive wins the match.
+
+Each match starts with players parachuting from a plane onto one of the four maps, with areas of approximately 8 × 8 kilometres (5.0 × 5.0 mi), 6 × 6 kilometres (3.7 × 3.7 mi), and 4 × 4 kilometres (2.5 × 2.5 mi) in size.The plane's flight path across the map varies with each round, requiring players to quickly determine the best time to eject and parachute to the ground.Players start with no gear beyond customized clothing selections which do not affect gameplay. Once they land, players can search buildings, ghost towns and other sites to find weapons, vehicles, armor, and other equipment. These items are procedurally distributed throughout the map at the start of a match, with certain high-risk zones typically having better equipment.Killed players can be looted to acquire their gear as well.Players can opt to play either from the first-person or third-person perspective, each having their own advantages and disadvantages in combat and situational awareness; though server-specific settings can be used to force all players into one perspective to eliminate some advantages.
+
+
+At the completion of each round, players gain in-game currency based on their performance. The currency is used to purchase crates which contain cosmetic items for character or weapon customization.A rotating "event mode" was added to the game in March 2018. These events change up the normal game rules, such as establishing larger teams or squads, or altering the distribution of weapons and armor across the game map.</p>
+   </div>
+   <!--pubg end-->
+   <!--pubg lite-->
+   <div id="pubglite">
+   <hr width="100%">
+   <h1 align="center"><b>PUBG LITE<b></h1>
+     <h1 align="center"><b>(Player Unknown Battleground Lite)</b></h1>
+       			<div class="item">
+                <img src="Images/pubglite.jpg" style="width:90%; padding-left:10%;">
+                </div>
+                <br>
+                <br>
+                <!--side table-->
+          <table class="infobox hproduct" style="width:22em;float: right; width: 22em; font-size: 90%; text-align: left; border-spacing: 3px; border:thin;">
+          <tbody>
+                <tr>
+                <th colspan="2" class="fn" style="text-align:center;font-size:125%;font-weight:bold;font-size:110%;font-style:italic;">PlayerUnknown's Battlegrounds</th></tr>
+                <tr><td colspan="2" style="text-align:center"><img src="Images/pubg.jpg" width="220" height="103"><br></td></tr>
+                <tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Developer(s)</th><td style="line-height:1.3em;">PUBG Corporation</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Publisher(s)</th>
+                <td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame1">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">PUBG Corporation</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+PUBG Corporation (PC, PS4)</li><li style="line-height: inherit; margin: 0">Microsoft Studios(Xbox One)</li><li style="line-height: inherit; margin: 0">Tencent Games(mobile)</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Director</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Brendan Greene</li><li>Tae-seok Jang</li></ul></div></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Producer(s)</th><td style="line-height:1.3em;">Chang-han Kim</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Designer(s)</th><td style="line-height:1.3em;">Brendan Greene</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Artist(s)</th><td style="line-height:1.3em;">Tae-seok Jang</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Composer(s)</th><td style="line-height:1.3em;">Tom Salta</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Engine</th><td style="line-height:1.3em;">Unreal Engine 4</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Platform(s)</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Microsoft Windows</li><li>Android</li><li>iOS</li><li>Xbox One</li><li>PlayStation 4</li></ul></div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Release</th><td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame2">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">December 12, 2018</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+<b>Microsoft Windows</b></li><li style="line-height: inherit; margin: 0">December 20, 2017</li><li style="line-height: inherit; margin: 0">
+<b>Android</b>, <b>iOS</b></li><li style="line-height: inherit; margin: 0">March 19, 2018</li><li style="line-height: inherit; margin: 0">
+<b>Xbox One</b></li><li style="line-height: inherit; margin: 0">September 4, 2018</li><li style="line-height: inherit; margin: 0">
+<b>PlayStation 4</b></li><li style="line-height: inherit; margin: 0">December 7, 2018</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Genre(s)</th><td style="line-height:1.3em;">Battle royale</a></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Mode(s)</th><td style="line-height:1.3em;">Multiplayer</td></tr></tbody></table>
+                
+              
+              <H1 align="center">ABOUT</H1>
+            <P align="center">PUBG Lite is a free version of Battlegrounds that is meant to be better playable on low-end computers by having significant reductions in graphic details and other features, but is otherwise feature complete with the full game. The version is meant to be played in regions where the game's minimum specifications may be difficult for average players to achieve, with a beta launch first releasing in Thailand in January 2019, and in Europe that October.
+
+
+            </P>
+            <h1 align="center">Gameplay</h1>
+            <p align="center" style="font-size:12px;">Battlegrounds is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match solo, duo, or with a small team of up to four people. The last person or team alive wins the match.
+
+Each match starts with players parachuting from a plane onto one of the four maps, with areas of approximately 8 × 8 kilometres (5.0 × 5.0 mi), 6 × 6 kilometres (3.7 × 3.7 mi), and 4 × 4 kilometres (2.5 × 2.5 mi) in size.The plane's flight path across the map varies with each round, requiring players to quickly determine the best time to eject and parachute to the ground.Players start with no gear beyond customized clothing selections which do not affect gameplay. Once they land, players can search buildings, ghost towns and other sites to find weapons, vehicles, armor, and other equipment. These items are procedurally distributed throughout the map at the start of a match, with certain high-risk zones typically having better equipment.Killed players can be looted to acquire their gear as well.Players can opt to play either from the first-person or third-person perspective, each having their own advantages and disadvantages in combat and situational awareness; though server-specific settings can be used to force all players into one perspective to eliminate some advantages.
+
+
+At the completion of each round, players gain in-game currency based on their performance. The currency is used to purchase crates which contain cosmetic items for character or weapon customization.A rotating "event mode" was added to the game in March 2018. These events change up the normal game rules, such as establishing larger teams or squads, or altering the distribution of weapons and armor across the game map.</p>
+
+   </div>
+   <!--pubg lite end-->
+   
+   <!--pubg mobile-->
+        <hr width="100%">
+     <div id="pubgmobile">
+     <h1 align="center"><b>PUBG MOBILE<b></h1>
+     <h1 align="center"><b>(Player Unknown Battleground Mobile)</b></h1>
+       			<div class="item">
+                <img src="Images/pubg_mobile.jpg" style="width:90%; padding-left:10%;">
+                </div>
+                <br>
+                <br>
+                <!--side table-->
+          <table class="infobox hproduct" style="width:22em;float: right; width: 22em; font-size: 90%; text-align: left; border-spacing: 3px; border:thin;">
+          <tbody>
+                <tr>
+                <th colspan="2" class="fn" style="text-align:center;font-size:125%;font-weight:bold;font-size:110%;font-style:italic;">PlayerUnknown's Battlegrounds</th></tr>
+                <tr><td colspan="2" style="text-align:center"><img src="Images/pubg.jpg" width="220" height="103"><br></td></tr>
+                <tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Developer(s)</th><td style="line-height:1.3em;">PUBG Corporation</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Publisher(s)</th>
+                <td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame1">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">PUBG Corporation</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+PUBG Corporation (PC, PS4)</li><li style="line-height: inherit; margin: 0">Microsoft Studios(Xbox One)</li><li style="line-height: inherit; margin: 0">Tencent Games(mobile)</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Director</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Brendan Greene</li><li>Tae-seok Jang</li></ul></div></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Producer(s)</th><td style="line-height:1.3em;">Chang-han Kim</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Designer(s)</th><td style="line-height:1.3em;">Brendan Greene</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Artist(s)</th><td style="line-height:1.3em;">Tae-seok Jang</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Composer(s)</th><td style="line-height:1.3em;">Tom Salta</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Engine</th><td style="line-height:1.3em;">Unreal Engine 4</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Platform(s)</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Microsoft Windows</li><li>Android</li><li>iOS</li><li>Xbox One</li><li>PlayStation 4</li></ul></div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Release</th><td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame2">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">December 20, 2017</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+<b>Microsoft Windows</b></li><li style="line-height: inherit; margin: 0">December 20, 2017</li><li style="line-height: inherit; margin: 0">
+<b>Android</b>, <b>iOS</b></li><li style="line-height: inherit; margin: 0">March 19, 2018</li><li style="line-height: inherit; margin: 0">
+<b>Xbox One</b></li><li style="line-height: inherit; margin: 0">September 4, 2018</li><li style="line-height: inherit; margin: 0">
+<b>PlayStation 4</b></li><li style="line-height: inherit; margin: 0">December 7, 2018</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Genre(s)</th><td style="line-height:1.3em;">Battle royale</a></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Mode(s)</th><td style="line-height:1.3em;">Multiplayer</td></tr></tbody></table>
+                
+              
+              <H1 align="center">ABOUT</H1>
+            <P align="center">PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.
+            </P>
+            <h1 align="center">Gameplay</h1>
+            <p align="center" style="font-size:12px;">Battlegrounds is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match solo, duo, or with a small team of up to four people. The last person or team alive wins the match.
+
+Each match starts with players parachuting from a plane onto one of the four maps, with areas of approximately 8 × 8 kilometres (5.0 × 5.0 mi), 6 × 6 kilometres (3.7 × 3.7 mi), and 4 × 4 kilometres (2.5 × 2.5 mi) in size.The plane's flight path across the map varies with each round, requiring players to quickly determine the best time to eject and parachute to the ground.Players start with no gear beyond customized clothing selections which do not affect gameplay. Once they land, players can search buildings, ghost towns and other sites to find weapons, vehicles, armor, and other equipment. These items are procedurally distributed throughout the map at the start of a match, with certain high-risk zones typically having better equipment.Killed players can be looted to acquire their gear as well.Players can opt to play either from the first-person or third-person perspective, each having their own advantages and disadvantages in combat and situational awareness; though server-specific settings can be used to force all players into one perspective to eliminate some advantages.
+
+
+At the completion of each round, players gain in-game currency based on their performance. The currency is used to purchase crates which contain cosmetic items for character or weapon customization.A rotating "event mode" was added to the game in March 2018. These events change up the normal game rules, such as establishing larger teams or squads, or altering the distribution of weapons and armor across the game map.</p>
+   </div>
+   <!--pubg mobile end-->
+   
+   <!--pubg mobile lite-->
+        <hr width="100%">
+     <div id="pubgmobilelite">
+     <h1 align="center"><b>PUBG MOBILE LITE<b></h1>
+     <h1 align="center"><b>(Player Unknown Battleground Mobile Lite)</b></h1>
+       			<div class="item">
+                <img src="Images/pubgmlite.jpg" style="width:90%; padding-left:10%;">
+                </div>
+                <br>
+                <br>
+                <!--side table-->
+          <table class="infobox hproduct" style="width:22em;float: right; width: 22em; font-size: 90%; text-align: left; border-spacing: 3px; border:thin;">
+          <tbody>
+                <tr>
+                <th colspan="2" class="fn" style="text-align:center;font-size:125%;font-weight:bold;font-size:110%;font-style:italic;">PlayerUnknown's Battlegrounds</th></tr>
+                <tr><td colspan="2" style="text-align:center"><img src="Images/pubg.jpg" width="220" height="103"><br></td></tr>
+                <tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Developer(s)</th><td style="line-height:1.3em;">PUBG Corporation</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Publisher(s)</th>
+                <td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame1">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">PUBG Corporation</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+PUBG Corporation (PC, PS4)</li><li style="line-height: inherit; margin: 0">Microsoft Studios(Xbox One)</li><li style="line-height: inherit; margin: 0">Tencent Games(mobile)</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Director</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Brendan Greene</li><li>Tae-seok Jang</li></ul></div></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Producer(s)</th><td style="line-height:1.3em;">Chang-han Kim</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Designer(s)</th><td style="line-height:1.3em;">Brendan Greene</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Artist(s)</th><td style="line-height:1.3em;">Tae-seok Jang</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Composer(s)</th><td style="line-height:1.3em;">Tom Salta</td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Engine</th><td style="line-height:1.3em;">Unreal Engine 4</td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Platform(s)</th><td style="line-height:1.3em;"><div class="plainlist"><ul><li>Microsoft Windows</li><li>Android</li><li>iOS</li><li>Xbox One</li><li>PlayStation 4</li></ul></div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Release</th><td style="line-height:1.3em;"><div class="NavFrame collapsed" style="border: none; padding: 0;" id="NavFrame2">
+<div class="NavHead" style="font-size: 105%; font-weight:normal;background:transparent;text-align:left">December 20, 2017</div>
+<ul class="NavContent" style="list-style: none none; margin-left: 0px; text-align: left; font-size: 105%; margin-top: 0px; margin-bottom: 0px; line-height: inherit; display: none;"><li style="line-height: inherit; margin: 0">
+<b>Microsoft Windows</b></li><li style="line-height: inherit; margin: 0">December 20, 2017</li><li style="line-height: inherit; margin: 0">
+<b>Android</b>, <b>iOS</b></li><li style="line-height: inherit; margin: 0">March 19, 2018</li><li style="line-height: inherit; margin: 0">
+<b>Xbox One</b></li><li style="line-height: inherit; margin: 0">September 4, 2018</li><li style="line-height: inherit; margin: 0">
+<b>PlayStation 4</b></li><li style="line-height: inherit; margin: 0">December 7, 2018</li></ul>
+</div></td></tr>
+<tr>
+<th scope="row" style="white-space:nowrap;padding-right:0.65em;">Genre(s)</th><td style="line-height:1.3em;">Battle royale</a></td></tr><tr><th scope="row" style="white-space:nowrap;padding-right:0.65em;">Mode(s)</th><td style="line-height:1.3em;">Multiplayer</td></tr></tbody></table>
+                
+              
+              <H1 align="center">ABOUT</H1>
+            <P align="center">PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.
+            </P>
+            <h1 align="center">Gameplay</h1>
+            <p align="center" style="font-size:12px;">Battlegrounds is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. Players can choose to enter the match solo, duo, or with a small team of up to four people. The last person or team alive wins the match.
+
+Each match starts with players parachuting from a plane onto one of the four maps, with areas of approximately 8 × 8 kilometres (5.0 × 5.0 mi), 6 × 6 kilometres (3.7 × 3.7 mi), and 4 × 4 kilometres (2.5 × 2.5 mi) in size.The plane's flight path across the map varies with each round, requiring players to quickly determine the best time to eject and parachute to the ground.Players start with no gear beyond customized clothing selections which do not affect gameplay. Once they land, players can search buildings, ghost towns and other sites to find weapons, vehicles, armor, and other equipment. These items are procedurally distributed throughout the map at the start of a match, with certain high-risk zones typically having better equipment.Killed players can be looted to acquire their gear as well.Players can opt to play either from the first-person or third-person perspective, each having their own advantages and disadvantages in combat and situational awareness; though server-specific settings can be used to force all players into one perspective to eliminate some advantages.
+
+
+At the completion of each round, players gain in-game currency based on their performance. The currency is used to purchase crates which contain cosmetic items for character or weapon customization.A rotating "event mode" was added to the game in March 2018. These events change up the normal game rules, such as establishing larger teams or squads, or altering the distribution of weapons and armor across the game map.</p>
+   </div>
+   <!--pubg mobile lite end-->
+   <!--contact us-->
+   
+  <div id="contactusbg">
+  <hr width="100%">
+  <br>
+  <h1 align="center" style="color:black;"><b>Contact Us</b></h1>
+  
+  		<div class="container" id="contactus">
+    <input type="text" id="fname" name="firstname" placeholder="Your name" style="background-color:transparent;">
+
+    
+    <input type="text" id="lname" name="lastname" placeholder="Your last name" style="background-color:transparent;">
+
+    
+    <select id="country" name="country" style="background-color:transparent;">
+      <option value="australia" style="background-color:transparent;">Australia</option>
+      <option value="canada" style="background-color:transparent;">Canada</option>
+      <option value="usa" style="background-color:transparent;">USA</option>
+    </select>
+
+    
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px;background-color:transparent; color:black;"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+  
+		</div>
+	
+    <div style="background-color:black;">
+    <hr width="90%">
+    <div style="padding-left:40%;">
+    <a href="https://discordapp.com/" target="_blank"><img src="Images/disc.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    <a href="https://youtube.com/" target="_blank"><img src="Images/youtube.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    <a href="https://instagram.com/" target="_blank"><img src="Images/instaaa.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    <a href="https://reddit.com/" target="_blank"><img src="Images/reddit.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    <a href="https://twitch.com/" target="_blank"><img src="Images/teitch.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    <a href="https://twitter.com/" target="_blank"><img src="Images/twiter.png" width="30px" height="25px" style="padding-right:0.5%;"></a>
+    </div>
+    <hr width="90%">
+    
+    <img src="Images/punglogo.png" height="70px" width="80px" style="overflow:auto; padding-left:1%;">
+    <br><p align="left" style="overflow:auto;">COPYRIGHT ©2019 PUBG CORPORATION. ALL RIGHTS RESERVED.
+PLAYERUNKNOWN’S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG CORPORATION.</p>
+    </div>
+    
+   </
+    </body>
+</html>
